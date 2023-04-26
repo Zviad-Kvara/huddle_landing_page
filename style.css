@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #684BB1;
+    background-image: url("/images/bg-mobile.svg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 38.2px;
+    margin-left: 40px
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-image {
+    width: 279.69px;
+    height: 174.17px;
+    margin: 69.8px 39px 60px 40px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    width: 280px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 16px 35px 24px 36px
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    margin-bottom: 64px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #684BB1;
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.icon {
+    width: 27.14px;
+    height: 28px;
+    margin-bottom: 40px;
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        background-image: url("/images/bg-desktop.svg");
+        background-repeat: no-repeat;
+    }
+    .logo {
+        margin-left: 80px;
+        margin-top: 64px;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .main-image {
+        width: 657.64px;
+        height: 410.83px;
+        margin: 104px 59px 108px 80px;
+    }
+    h1 {
+        width: 487px;
+        font-size: 40px;
+        line-height: 60px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        Width: 520px;
+    }
+    button {
+        height: 27px;
+        font-size: 18px;
+        line-height: 27px;
+        border-radius: 28px;
+        Height: 56px;
+    }
+    button:hover {
+        background: #E880E8;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+    footer {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 80px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .icon:hover {
+        filter: invert(51%) sepia(38%) saturate(4145%) hue-rotate(294deg) brightness(102%) contrast(101%);
+        cursor: pointer;
+    }
+}
